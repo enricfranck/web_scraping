@@ -1,0 +1,18 @@
+		<!DOKTYPE html>
+    <html>
+        <head>
+        <meta charset='utf-8'>
+        <title> Web scraping </title>
+        </head>
+        <body>
+        <form action='welcome' method='post'>
+        {% csrf_token %}
+        {{erreur}}
+        <p>
+        	<label for="url" >Entrer l'URL: </label>
+        	<input name="text_url" id="text_url" type="text" size="60" required="required"/>
+        	<input type="submit" value="valider"/>
+        </p>
+        </form>
+        </body>
+    </html>
